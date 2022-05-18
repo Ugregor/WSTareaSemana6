@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WSClase6.MainPage" NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0">
+            <Label Text="Ingresar Nuevo Estudiante" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        </Frame>
+        <Label Text="Codigo:" Margin="10, 0"/>
+        <Entry x:Name="txtcodigo" Placeholder="Ingrese el codigo" Keyboard="Numeric" Margin="10, 0"/>
+        <Label Text="Nombre:" Margin="10, 0"/>
+        <Entry x:Name="txtNombre" Placeholder="Ingrese en nombre" Margin="10, 0"/>
+        <Label Text="Apelldio:" Margin="10, 0"/>
+        <Entry x:Name="txtApellido" Placeholder="Ingrese el apelldio" Margin="10, 0"/>
+        <Label Text="Edad:" Margin="10, 0"/>
+        <Entry x:Name="txtEdad" Placeholder="Ingrese la edad" Keyboard="Numeric" Margin="10, 0"/>
+        <Button x:Name="btnInsertar" Text="Insertar" Clicked="btnInsertar_Clicked" Margin="40, 0" FontAttributes="Bold"/>
+        <Button x:Name="btnRegresar" Text="Regresar" Clicked="btnRegresar_Clicked" Margin="40, 0" FontAttributes="Bold"/>
+    </StackLayout>
+
+</ContentPage>

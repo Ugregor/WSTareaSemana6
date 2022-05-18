@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WSClase6.Inicio">
+        <StackLayout>
+            <Label Text="Estudiantes"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="40" Padding="5, 15"/>
+        <Button x:Name="btnConsultar" Text="CONSULTAR" Clicked="btnConsultar_Clicked" Margin="40, 0"/>
+        <Button x:Name="btnNuevo" Text="NUEVO USUARIO" Clicked="btnNuevo_Clicked" Margin="40, 0"/>
+        <ListView x:Name="MyListView" RowHeight="65" ItemSelected="MyListView_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Grid RowDefinitions="3" ColumnDefinitions="3">
+                                <Label Text="Nombre: " Grid.Column="1" Grid.Row="1" FontSize="17"/>
+                                <Label x:Name="lblNombre" Grid.Column="2" Grid.Row="1" Text="{Binding nombre}" FontSize="17"/>
+                                <Label Text="Apellido: " Grid.Column="1" Grid.Row="2" FontSize="17"/>
+                                <Label x:Name="lblApellido" Grid.Column="2" Grid.Row="2" Text="{Binding apellido}" FontSize="17"/>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </StackLayout>
+
+
+</ContentPage>

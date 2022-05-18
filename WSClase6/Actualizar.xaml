@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WSClase6.Actualizar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0">
+                <Label Text="Actualizar Datos Estudiante" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+            <Label Text="Codigo:" Margin="10, 0"/>
+            <Entry x:Name="txtcodigo" Keyboard="Numeric" IsEnabled="False" FontAttributes="Bold" Margin="10, 0"/>
+            <Label Text="Nombre:" Margin="10, 0"/>
+            <Entry x:Name="txtNombre" Margin="10, 0"/>
+            <Label Text="Apelldio:" Margin="10, 0"/>
+            <Entry x:Name="txtApellido" Margin="10, 0"/>
+            <Label Text="Edad:" Margin="10, 0"/>
+            <Entry x:Name="txtEdad" Keyboard="Numeric" Margin="10, 0"/>
+            <Button x:Name="btnActulizar" Text="Actuzalizar" Clicked="btnActulizar_Clicked" BackgroundColor="Orange" TextColor="White" Margin="40, 0" FontAttributes="Bold"/>
+            <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked" BackgroundColor="Red" TextColor="White" Margin="40, 0" FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
